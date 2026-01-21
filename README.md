@@ -2,7 +2,7 @@
 Repositório com programas do desafio DIO para Pipeline de ETL
 
 ## dio_projeto.py
-Esse programa cria dois arquivos CSV, utilizando a biblíoteca "pandas": 
+Esse programa cria dois arquivos CSV, utilizando a biblioteca "pandas": 
 - 1 com dados de "clientes" fictícios de um banco.
 - 1 com opções de mensagens para esses clientes.
 
