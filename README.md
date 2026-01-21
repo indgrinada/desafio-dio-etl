@@ -7,7 +7,7 @@ Esse programa cria dois arquivos CSV, utilizando a biblioteca "pandas":
 - 1 com opções de mensagens para esses clientes.
 
 ## dio_projeto_final.py
-Esse é o programa principal. Nele, ocorre:
+Esse é o programa principal. Nele, ocorrem as etapas de:
 - Extração de dados dos arquivos CSV (criados com o programa dio_projeto.py).
 - Transformação dos dados, com a atribuição de uma mensagem para cada cliente, de acordo com o seu saldo.
 - Load/Carregamento dos dados transformados em um novo arquivo CSV.
