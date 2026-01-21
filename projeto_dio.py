@@ -19,10 +19,11 @@ opcoes_df = pd.DataFrame({
     ]
 })
 
-# Salva os DataFrames em arquivos CSV
-dados_df.to_csv(r"C:\Users\dindi\OneDrive\Área de Trabalho\dados_pandas_antes.csv", index=False, encoding='utf-8')
+# Salva os DataFrames em arquivos CSV. Obs.: substitua "<insira_caminho>" pelo caminho atá o arquivo salvo na máquina.
+dados_df.to_csv(r"C:\<insira_caminho>\dados_pandas_antes.csv", index=False, encoding='utf-8')
 print("Arquivo 'dados_pandas_antes.csv' criado com sucesso!")
 
-opcoes_df.to_csv(r"C:\Users\dindi\OneDrive\Área de Trabalho\dados_opcoes.csv", index=False, encoding='utf-8')  
+opcoes_df.to_csv(r"C:\<insira_caminho>\dados_opcoes.csv", index=False, encoding='utf-8')  
 print("Arquivo 'dados_opcoes.csv' criado com sucesso!")
+
 
