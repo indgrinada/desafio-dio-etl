@@ -1,8 +1,8 @@
 import pandas as pd
 
-# Lê o CSV e converte para uma lista de dicionários
-users = pd.read_csv(r"C:\Users\dindi\OneDrive\Área de Trabalho\dados_pandas_antes.csv").to_dict(orient="records")
-mensagem_opcoes = pd.read_csv(r"C:\Users\dindi\OneDrive\Área de Trabalho\dados_opcoes.csv").to_dict(orient="records")
+# Lê o CSV e converte para uma lista de dicionários. Obs.: substitua "<insira_caminho>" pelo caminho atá o arquivo salvo na máquina.
+users = pd.read_csv(r"C:\<insira_caminho>\dados_pandas_antes.csv").to_dict(orient="records")
+mensagem_opcoes = pd.read_csv(r"C:\<insira_caminho>\dados_opcoes.csv").to_dict(orient="records")
 
 # Avalia o saldo de cada usuário e atribui a mensagem correspondente
 for user in users:
@@ -15,7 +15,8 @@ for user in users:
     user["mensagem"] = mensagem
     print(f"{user["nome"]}: {user["mensagem"]}\n")
 
-# Salva o DataFrame atualizado em um novo arquivo CSV
+# Salva o DataFrame atualizado em um novo arquivo CSV. Obs.: substitua "<insira_caminho>" pelo caminho atá o arquivo salvo na máquina.
 users_df = pd.DataFrame(users)         
-users_df.to_csv(r"C:\Users\dindi\OneDrive\Área de Trabalho\dados_pandas_depois.csv", index=False, encoding='utf-8')
+users_df.to_csv(r"C:\<insira_caminho>\dados_pandas_depois.csv", index=False, encoding='utf-8')
+
 print(f"\nArquivo 'dados_pandas_depois.csv' criado com sucesso!")
